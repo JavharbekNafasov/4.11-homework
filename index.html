@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <title>4.11-Uyga vazifa</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="h2 text-center border-bottom pt-3 pb-3">Users API</h2>
+
+        <div class="row">
+            <div class="col">
+                <h3>Users</h3>
+                <p>Count of users: <span id="users-count">0</span></p>
+                <ul class="list-unstyled" id="users-list"></ul>
+            </div>
+
+            <div class="col border-start border-end">
+                <h3>Posts</h3>
+                <p>Count of posts: <span id="posts-count">0</span> User Id: <span id="posts-userid">0</span></p>
+                <ul class="list-unstyled" id="posts-list"></ul>
+            </div>
+
+            <div class="col">
+                <h3>Comments</h3>
+                <p>Count of comments: <span id="comments-count">0</span></p>
+                <ul class="list-unstyled" id="comments-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Users Template -->
+    <template id="users-template">
+        <li class="border border-danger p-1 mb-1">
+            <span class="h4 users-heading">Leanne Graham - Bret</span>
+            <!-- <span id="users-heading-wrapper"><a class="h5" id="users-heading" href=""></a></span>             -->
+            <p class="m-0 mt-2">Email: <a id="users-email" href="">hello@gmail.com</a></p>
+            <p class="m-0">Country: <span id="users-country">tashkent</span></p>
+            <p class="m-0">Company: <span id="users-company">tashkent</span></p>
+            <p class="m-0">Website: <a id="users-website" href="" target="blank">hello.com</a></p>
+        </li>
+    </template>
+
+    <!-- Posts Template -->
+    <template id="posts-template">
+        <li class="border border-warning p-1 mb-1">
+            <a class="h5" id="posts-heading" href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, voluptatibus!</a>
+            <p class="m-0 mt-2">Post: <span id="posts-post">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi et, excepturi voluptatem possimus labore enim facere vero nihil! Est saepe aliquam consequatur natus, accusantium maxime deleniti libero porro praesentium qui.
+            </span></p>
+        </li>
+    </template>
+
+    <!-- Comments Template -->
+    <template id="comments-template">
+        <li class="border border-primary p-1 mb-1">
+            <p class="m-0 h5">Title: <span id="comments-title">Lorem ipsum dolor sit amet.</span></p>
+            <p class="m-0 mt-2">Email: <a id="comments-email" href="">hello@gmail.com</a></p>
+            <p class="m-0">Comment: <span id="comments-comment">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi et, excepturi voluptatem possimus labore enim facere vero nihil! Est saepe aliquam consequatur natus, accusantium maxime deleniti libero porro praesentium qui.
+            </span></p>
+        </li>
+    </template>
+    
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
